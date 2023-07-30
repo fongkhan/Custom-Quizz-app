@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <button onclick="nextQuestion()">Next Question</button>
+    <button onclick="test()">test</button>
+    <div id="importCSV">
+        <!-- button importing a csv file from the pc of the user and activating the function csv_importing -->
+        <label for="csv">Importez un fichier csv</label><br>
+        <input type="file" id="csv" accept=".csv" onchange="csv_importing(this.files[0])">
+    </div>
+    <p id="quiz"></p>
+    <script>
+        const quizContainer = document.getElementById('quiz');
+        quizContainer.innerHTML = 'ceci est un test';
+    </script>
+    <script src="quiz.js"></script>
+</body>
+</html>
